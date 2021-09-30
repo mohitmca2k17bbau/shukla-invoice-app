@@ -1,6 +1,6 @@
 import React, { Component } from "react"
-import { TEXT_CONFIG } from "./constants/production";
-// import { TEXT_CONFIG } from "./constants/dev";
+// import { TEXT_CONFIG } from "./constants/production";
+import { TEXT_CONFIG } from "./constants/dev";
 import { today } from './constants/today';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
@@ -28,10 +28,11 @@ class LambdaDemo extends Component {
         <div className="container">
             <div className="brand-section">
               <div className="row">
-                <div className="col-6 col-md-6 col-sm-6">
+                <div className="col-md-4 col-sm-3 col-6">
                   <h1 className="text-white">{TEXT_CONFIG.LOGO_TEXT}</h1>
+                  <h4 className="text-white">{TEXT_CONFIG.LOGO_TEXT2}</h4>
                 </div>
-                <div className="col-6 col-sm-6">
+                <div className="col-md-8 col-sm-9 col-6">
                   <div className="company-details">
                     <p className="text-white">{TEXT_CONFIG.TOP_LINE1}</p>
                     <p className="text-white">{TEXT_CONFIG.TOP_LINE2}</p>
@@ -42,13 +43,13 @@ class LambdaDemo extends Component {
             </div>
             <div className="body-section">
               <div className="row">
-                <div className="col-6">
+                <div className="col-md-4 col-sm-3 col-6">
                   <h2 className="heading">Invoice No.: #{ (DATE.getFullYear().toString().substr(-2))+''+DATE.getMonth()+''+DATE.getDate()+''+DATE.getHours()+''+DATE.getMinutes()+''+DATE.getSeconds() }</h2>
-                  {/* <p className="sub-heading">Tracking No. fabcart </p>   */}
+                  <p className="sub-heading">GST No.: { TEXT_CONFIG.GST } </p>  
                   <p className="sub-heading">Order Date: { today() } </p>
-                  <p className="sub-heading">Email: { TEXT_CONFIG.OWNER_EMAIL } </p>
+                  {/* <p className="sub-heading">Email: { TEXT_CONFIG.OWNER_EMAIL } </p> */}
                 </div>
-                <div className="col-6">
+                <div className="col-md-8 col-sm-9  col-6">
                   <p className="sub-heading">Full Name:</p>
                   <p className="sub-heading">Address:</p>
                   <p className="sub-heading">Phone Number:</p>

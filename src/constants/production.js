@@ -4,7 +4,8 @@ const TEXT_CONFIG =
     TOP_LINE1 : "Shukla Mobile Shop",
     TOP_LINE2 : "Main Market Gosainganj Lucknow",
     TOP_LINE3 : "+91 7007127187",
-    OWNER_EMAIL: "shuklamobile_187@gmail.com"
+    OWNER_EMAIL: "shuklamobile_187@gmail.com",
+    GST: "********"
 }
 
 export { TEXT_CONFIG }
