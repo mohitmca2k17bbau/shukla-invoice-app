@@ -1,6 +1,11 @@
 import React, { Component } from "react"
-// import { TEXT_CONFIG } from "./constants/production";
-import { TEXT_CONFIG } from "./constants/dev";
+
+
+import { TEXT_CONFIG } from "./constants/production";
+// import { TEXT_CONFIG } from "./constants/dev";
+
+
+
 import { today } from './constants/today';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
@@ -58,46 +63,66 @@ class LambdaDemo extends Component {
               </div>
             </div>
             <div className="body-section">
-              <h3 className="heading">Ordered Items</h3>
+              <h3 className="heading">Purchased Item</h3>
               <br />
               <table className="table-bordered">
                 <thead>
                   <tr>
-                    <th>Product</th>
-                    <th className="w-20">Price</th>
-                    <th className="w-20">Quantity</th>
-                    <th className="w-20">Grandtotal</th>
+                    <th className="th-text">Product</th>
+                    <th className="w-20 th-text">Price</th>
+                    {/* <th className="w-20">Qty</th> */}
+                    <th className="w-20 th-text">Total</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Product Name</td>
-                    <td>10</td>
-                    <td>1</td>
-                    <td>10</td>
+                    <td className="td-product">
+                     <p> Mobile IMEI: </p>
+                     <p> Battery No.: </p>
+                     <p> Charger No.: </p>
+                    </td>
+                    <td>xxxx</td>
+                    {/* <td>1</td> */}
+                    <td>xxxx</td>
                   </tr>
                   <tr>
-                    <td colSpan={3} className="text-right">Sub Total</td>
-                    <td> 10.XX</td>
+                    <td colSpan={2} className="text-right">Sub Total</td>
+                    <td> xxx.xxx</td>
                   </tr>
                   <tr>
-                    <td colSpan={3} className="text-right">Tax Total %1X</td>
-                    <td> 2</td>
+                    <td colSpan={2} className="text-right">SGST %X</td>
+                    <td> xx</td>
                   </tr>
                   <tr>
-                    <td colSpan={3} className="text-right">Grand Total</td>
-                    <td> 12.XX</td>
+                    <td colSpan={2} className="text-right">GST %X</td>
+                    <td> xx</td>
+                  </tr>
+                  
+                  <tr>
+                    <td colSpan={2} className="text-right">Grand Total</td>
+                    <td> xxxx.xx</td>
                   </tr>
                 </tbody>
               </table>
               <br />
-              <h3 className="heading">Payment Status: Paid</h3>
-              <h3 className="heading">Payment Mode: Cash on Delivery</h3>
+              <div className="row">
+                <div className="col-6">
+                  <h3 className="heading">Payment Status: </h3>
+                </div>
+                <div className="col-6">
+                  <h3 className="heading">Signature:</h3>
+                </div>
+              </div>
             </div>
             <div className="body-section">
-              <p>© Copyright 2021 - M Awasthi. All rights reserved. 
-                <a href="#" className="float-right">Print</a>
-              </p>
+              <div className="row">
+                <div className="col-6">
+                  <p>©2021 - M Awasthi</p>
+                </div>
+                <div className="col-6">
+                  <a href="#" className="float-right">Print</a>
+                </div>
+              </div>
             </div>      
           </div>  
         </div>

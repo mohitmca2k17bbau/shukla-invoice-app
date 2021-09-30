@@ -89,6 +89,12 @@ table th, table td {
 .float-right{
   float: right;
 }
+td.td-product {
+  text-align: left;
+}
+th.th-text {
+  text-align: center;
+}
 
 @media only screen and (max-width: 600px) {
   h1{
