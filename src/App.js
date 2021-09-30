@@ -1,7 +1,10 @@
 import React, { Component } from "react"
-import logo from "./logo.svg"
+import { TEXT_CONFIG } from "./constants/production";
+// import { TEXT_CONFIG } from "./constants/dev";
+import { today } from './constants/today';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
-
+const DATE = new Date();
 class LambdaDemo extends Component {
   constructor(props) {
     super(props)
@@ -19,20 +22,20 @@ class LambdaDemo extends Component {
 
   render() {
     const { loading, msg } = this.state
-
+    
     return (
-      <div className="App">
+      <div >
         <div className="container">
             <div className="brand-section">
               <div className="row">
-                <div className="col-6">
-                  <h1 className="text-white">FABCART</h1>
+                <div className="col-6 col-md-6 col-sm-6">
+                  <h1 className="text-white">{TEXT_CONFIG.LOGO_TEXT}</h1>
                 </div>
-                <div className="col-6">
+                <div className="col-6 col-sm-6">
                   <div className="company-details">
-                    <p className="text-white">assdad asd  asda asdad a sd</p>
-                    <p className="text-white">assdad asd asd</p>
-                    <p className="text-white">+91 888555XXXX</p>
+                    <p className="text-white">{TEXT_CONFIG.TOP_LINE1}</p>
+                    <p className="text-white">{TEXT_CONFIG.TOP_LINE2}</p>
+                    <p className="text-white">{TEXT_CONFIG.TOP_LINE3}</p>
                   </div>
                 </div>
               </div>
@@ -40,10 +43,10 @@ class LambdaDemo extends Component {
             <div className="body-section">
               <div className="row">
                 <div className="col-6">
-                  <h2 className="heading">Invoice No.: 001</h2>
-                  <p className="sub-heading">Tracking No. fabcart2025 </p>
-                  <p className="sub-heading">Order Date: 20-20-2021 </p>
-                  <p className="sub-heading">Email Address: customer@gfmail.com </p>
+                  <h2 className="heading">Invoice No.: #{ (DATE.getFullYear().toString().substr(-2))+''+DATE.getMonth()+''+DATE.getDate()+''+DATE.getHours()+''+DATE.getMinutes()+''+DATE.getSeconds() }</h2>
+                  {/* <p className="sub-heading">Tracking No. fabcart </p>   */}
+                  <p className="sub-heading">Order Date: { today() } </p>
+                  <p className="sub-heading">Email: { TEXT_CONFIG.OWNER_EMAIL } </p>
                 </div>
                 <div className="col-6">
                   <p className="sub-heading">Full Name:</p>
@@ -91,8 +94,8 @@ class LambdaDemo extends Component {
               <h3 className="heading">Payment Mode: Cash on Delivery</h3>
             </div>
             <div className="body-section">
-              <p>© Copyright 2021 - Fabcart. All rights reserved. 
-                <a href="https://www.fundaofwebit.com/" className="float-right">www.fundaofwebit.com</a>
+              <p>© Copyright 2021 - M Awasthi. All rights reserved. 
+                <a href="#" className="float-right">Print</a>
               </p>
             </div>      
           </div>  

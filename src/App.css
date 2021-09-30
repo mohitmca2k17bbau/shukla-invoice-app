@@ -27,20 +27,20 @@ p{
   width: 50%;
 }
 
-.row{
+/* .row{
   display: flex;
   flex-wrap: wrap;
 }
 .col-6{
   width: 50%;
   flex: 0 0 auto;
-}
+} */
 .text-white{
   color: #fff;
 }
 .company-details{
   float: right;
-  text-align: right;
+  text-align: left;
 }
 .body-section{
   padding: 16px;
