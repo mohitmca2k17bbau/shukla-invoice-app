@@ -7,6 +7,8 @@ const TEXT_CONFIG =
     TOP_LINE3 : "+91 7007127187",
     OWNER_EMAIL: "shuklamobile_187@gmail.com",
     GST: "********",
+    SGSTP : 12,
+    GSTP : 12,
 }
 
 export { TEXT_CONFIG }

@@ -6,8 +6,9 @@ const TEXT_CONFIG =
     TOP_LINE2 : "bbbb bbbbbb bbbbbbbb bbbbbbb",
     TOP_LINE3 : "+91 888555XXXX",
     OWNER_EMAIL : "fhrkthsukife_187@gmail.com",
-    GST: "01234567890"
-
+    GST: "01234567890",
+    SGSTP : 12,
+    GSTP : 12,
 }
 
 export { TEXT_CONFIG }

@@ -96,6 +96,9 @@ th.th-text {
   text-align: center;
 }
 
+.inlineInputClass{
+  z-index: 1;
+}
 @media only screen and (max-width: 600px) {
   h1{
     font-size: 25px;
@@ -110,6 +113,13 @@ th.th-text {
   }
   .heading{
     font-size: 12px;
+  }
+  .inlineLabelClass {
+    font-size: 13px;
+    margin: 0px;
+  }
+  .margin-bottom {
+      margin-bottom: 5px;
   }
  
 }
